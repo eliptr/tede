@@ -1,0 +1,43 @@
+{
+  "name": "ted2026-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "nest build",
+    "start": "node dist/main",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "import:dataset": "ts-node scripts/import-rel-events-dataset.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.3.0",
+    "@nestjs/core": "^10.3.0",
+    "@nestjs/platform-express": "^10.3.0",
+    "@nestjs/typeorm": "^10.0.2",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/passport": "^10.0.3",
+    "@nestjs/config": "^3.2.0",
+    "@nestjs/serve-static": "^4.0.1",
+    "typeorm": "^0.3.20",
+    "mysql2": "^3.9.4",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "bcrypt": "^5.1.1",
+    "class-validator": "^0.14.1",
+    "class-transformer": "^0.5.1",
+    "xml2js": "^0.6.2",
+    "multer": "^1.4.5-lts.1",
+    "reflect-metadata": "^0.2.1",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.3.2",
+    "@nestjs/schematics": "^10.1.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.11.30",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/xml2js": "^0.4.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
